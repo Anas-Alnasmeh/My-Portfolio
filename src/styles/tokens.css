@@ -1,0 +1,113 @@
+:root {
+  /* ---------- Color: surfaces ---------- */
+  --bg-0: #08090c;
+  /* page base */
+  --bg-1: #0c0e13;
+  /* section alt */
+  --surface-1: #111319;
+  /* card */
+  --surface-2: #171a22;
+  /* card hover / raised */
+  --surface-glass: rgba(23, 26, 34, 0.55);
+  --border-hairline: rgba(255, 255, 255, 0.08);
+  --border-hairline-strong: rgba(255, 255, 255, 0.14);
+
+  /* ---------- Color: text ---------- */
+  --text-primary: #f3f4f7;
+  --text-secondary: #a7abb8;
+  --text-tertiary: #6b7080;
+  --text-on-accent: #0a0b0f;
+
+  /* ---------- Color: accent duotone ---------- */
+  --accent-violet: #7c5cfc;
+  --accent-violet-dim: #5b41c4;
+  --accent-amber: #ffb86b;
+  --accent-amber-dim: #d99a52;
+  --gradient-signature: linear-gradient(120deg, var(--accent-violet) 0%, #9b7bff 45%, var(--accent-amber) 100%);
+  --gradient-signature-soft: linear-gradient(120deg, rgba(124, 92, 252, 0.16) 0%, rgba(255, 184, 107, 0.12) 100%);
+
+  /* ---------- Color: semantic ---------- */
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --danger: #f87171;
+
+  /* ---------- Typography ---------- */
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --fs-2xs: 0.6875rem;
+  /* 11px */
+  --fs-xs: 0.8125rem;
+  /* 13px */
+  --fs-sm: 0.9375rem;
+  /* 15px */
+  --fs-base: 1.0625rem;
+  /* 17px */
+  --fs-lg: 1.25rem;
+  /* 20px */
+  --fs-xl: 1.75rem;
+  /* 28px */
+  --fs-2xl: 2.5rem;
+  /* 40px */
+  --fs-3xl: 3.5rem;
+  /* 56px */
+  --fs-4xl: clamp(3rem, 5vw + 1rem, 5.5rem);
+  /* hero */
+
+  --lh-tight: 1.08;
+  --lh-snug: 1.28;
+  --lh-normal: 1.55;
+
+  /* ---------- Spacing (8pt-derived, one irregular step for rhythm) ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ---------- Elevation ---------- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.45);
+  --shadow-glow-violet: 0 0 0 1px rgba(124, 92, 252, 0.25), 0 12px 40px rgba(124, 92, 252, 0.18);
+  --shadow-glow-amber: 0 0 0 1px rgba(255, 184, 107, 0.2), 0 12px 40px rgba(255, 184, 107, 0.12);
+
+  /* ---------- Motion ---------- */
+  --dur-fast: 0.16s;
+  --dur-base: 0.28s;
+  --dur-slow: 0.5s;
+  --dur-slower: 0.9s;
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---------- Layout ---------- */
+  --container-max: 1280px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+  --nav-height: 68px;
+
+  /* Breakpoints (referenced in comments; media queries hardcode px) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+}
+
+@media (prefers-color-scheme: light) {
+  /* Portfolio is intentionally single-theme (dark, editor-like) to match the
+     developer/code identity of the design system — no light variant. */
+}
