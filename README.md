@@ -32,6 +32,5 @@ src/
 ├── data/          # Portfolio content & static datasets
 ├── hooks/         # Custom React hooks (useScrollSpy, useCounter, useMousePosition)
 ├── styles/        # Design system tokens and global CSS utilities
-├── utils/         # Constants, contact API endpoints, and configuration
-└── images/        # Photos of completed projects
+└── utils/         # Constants, contact API endpoints, and configuration
 ```
