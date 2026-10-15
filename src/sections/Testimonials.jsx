@@ -10,7 +10,7 @@ export default function Testimonials() {
         <div className="section-head">
           <p className="eyebrow">testimonials</p>
           <h2 className="section-title">What people say</h2>
-          <p className="section-desc">Placeholder quotes — swap in real feedback as it comes in.</p>
+          <p className="section-desc">Feedback from clients and teams I’ve collaborated with to build high-performance web applications.</p>
         </div>
 
         <div className="testimonials__grid">

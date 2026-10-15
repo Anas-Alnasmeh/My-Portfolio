@@ -7,7 +7,7 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Services from "./sections/Services";
 import Projects from "./sections/Projects";
-import Certificates from "./sections/Certificates";
+// import Certificates from "./sections/Certificates";
 import Testimonials from "./sections/Testimonials";
 import Blog from "./sections/Blog";
 import Contact from "./sections/Contact";
@@ -43,7 +43,7 @@ export default function App() {
         <Skills />
         <Services />
         <Projects />
-        <Certificates />
+        {/* <Certificates /> */}
         <Testimonials />
         <Blog />
         <Contact />

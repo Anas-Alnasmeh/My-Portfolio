@@ -11,8 +11,7 @@ export default function Projects() {
           <p className="eyebrow">projects</p>
           <h2 className="section-title">Selected work</h2>
           <p className="section-desc">
-            Three projects worth a closer look. Replace these placeholders
-            with real case studies, screenshots, and links.
+            The three best projects worth a closer look.
           </p>
         </div>
 

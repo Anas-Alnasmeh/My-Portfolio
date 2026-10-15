@@ -16,7 +16,7 @@ export const SKILL_GROUPS = [
       { name: "React", level: 93 },
       { name: "Redux Toolkit", level: 82 },
       { name: "React Router", level: 88 },
-      { name: "Framer Motion", level: 80 },
+      { name: "Next", level: 90 },
     ],
   },
   {
@@ -26,7 +26,7 @@ export const SKILL_GROUPS = [
       { name: "REST APIs", level: 87 },
       { name: "Axios", level: 90 },
       { name: "Git & GitHub", level: 91 },
-      { name: "Bootstrap", level: 84 },
+      { name: "Tailwind", level: 88 },
     ],
   },
   {
