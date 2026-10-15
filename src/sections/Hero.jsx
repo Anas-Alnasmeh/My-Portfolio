@@ -114,6 +114,7 @@ export default function Hero() {
           <MagneticButton
             as={motion.a}
             href={PROFILE.resumeUrl}
+            target="_blank"
             className="btn btn-secondary"
           >
             <HiOutlineDocumentArrowDown size={18} />

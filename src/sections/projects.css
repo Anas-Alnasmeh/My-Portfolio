@@ -17,32 +17,6 @@
   box-shadow: var(--shadow-glow-amber);
 }
 
-.project-card__media {
-  position: relative;
-  aspect-ratio: 16 / 10;
-  background: linear-gradient(135deg, rgba(124, 92, 252, 0.18), rgba(255, 184, 107, 0.12));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.project-card__media::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-.project-card__media-label {
-  position: relative;
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  color: var(--text-tertiary);
-}
-
 .project-card__body {
   padding: var(--space-5);
   display: flex;

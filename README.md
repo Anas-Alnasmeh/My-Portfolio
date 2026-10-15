@@ -1,58 +1,37 @@
-# Anas Alnasmeh — Portfolio
+# Anas Alnasmeh — Personal Portfolio
 
-A single-page portfolio for a Frontend Web Developer, built with React,
-modern CSS (no framework), and Framer Motion.
+A sleek, modern single-page portfolio website for a Frontend Web Developer, designed and built from scratch with custom CSS and fluid motion design.
 
-## Stack
+![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
+![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.x-0055FF?style=flat-square&logo=framer)
 
-- React 19 (JavaScript, no TypeScript)
-- Vite
-- Framer Motion — page/section/card animations
-- React Icons
-- Axios — contact form submission
-- Hand-written CSS design system (`src/styles/tokens.css`)
+---
 
-## Getting started
+## ⚡ Highlights & Features
 
-```bash
-npm install
-npm run dev       # local dev server
-npm run build     # production build → dist/
-npm run preview   # preview the production build locally
-```
+- **Editor-Inspired UX:** Custom navigation styled after modern IDE tab bars.
+- **Custom CSS Design System:** Handcrafted design tokens (colors, typography, dynamic spacing, and motion curves) in raw CSS without external utility frameworks.
+- **Smooth Animations & Interactions:** Built using Framer Motion alongside custom hooks for magnetic buttons, scroll spy, and animated counters.
+- **Accessibility & Motion First:** Native support for `prefers-reduced-motion` and keyboard navigation.
+- **Data-Driven Architecture:** Clean separation between presentation components and content data.
 
-## Structure
+## 🛠️ Tech Stack
 
-```
+- **Core:** React 19, Vite
+- **Styling:** Modern Vanilla CSS (CSS Variables / Tokens)
+- **Animation:** Framer Motion
+- **Icons & Network:** React Icons, Axios
+
+## 📂 Project Structure
+
+```text
 src/
-  components/   shared UI: Navbar, Footer, Loader, Reveal, MagneticButton
-  sections/     one file + one stylesheet per page section
-  data/         content, separated from markup (edit here to update copy)
-  hooks/        useScrollSpy, useCounter, useMousePosition, usePrefersReducedMotion
-  styles/       tokens.css (design system) + base.css (globals/utilities)
-  utils/        constants.js — name, email, social links, contact endpoint
+├── components/    # Reusable UI elements (Navbar, Footer, MagneticButton, Reveal)
+├── sections/      # Page section components & dedicated styles
+├── data/          # Portfolio content & static datasets
+├── hooks/         # Custom React hooks (useScrollSpy, useCounter, useMousePosition)
+├── styles/        # Design system tokens and global CSS utilities
+├── utils/         # Constants, contact API endpoints, and configuration
+└── images/        # Photos of completed projects
 ```
-
-## Before you deploy
-
-1. **`src/utils/constants.js`** — set your real name, email, GitHub/LinkedIn
-   URLs, resume link, and a real `CONTACT_ENDPOINT` (e.g. a Formspree
-   endpoint or your own API route).
-2. **`src/data/projects.js`, `certificates.js`, `testimonials.js`, `blog.js`**
-   — replace the placeholder content with your real projects and copy.
-3. **`src/sections/projects.css`** — the project cards currently render a
-   placeholder gradient tile (`.project-card__media`); swap in real
-   screenshots via an `<img>` if you'd like.
-4. **`index.html`** — update the OG/Twitter meta `og:image` and `og:url`
-   once the site has a real domain.
-
-## Design system notes
-
-- Colors, type scale, spacing, radii, shadows, and motion durations are all
-  CSS custom properties in `src/styles/tokens.css` — change a value there
-  and it propagates everywhere.
-- The navbar is styled as an editor tab bar (hero.jsx, about.jsx, ...) as
-  the page's signature visual motif, tying the chrome back to the
-  "frontend developer" identity.
-- `prefers-reduced-motion` is respected globally (`base.css`) and in the
-  counter/magnetic-button hooks individually.

@@ -20,7 +20,7 @@ export default function Projects() {
           {PROJECTS.map((project, i) => (
             <Reveal key={project.id} className="project-card glass-panel" delay={i * 0.12}>
               <div className="project-card__media" aria-hidden="true">
-                <span className="project-card__media-label">Project preview</span>
+                <img src={project.image} alt={project.title} />
               </div>
 
               <div className="project-card__body">
